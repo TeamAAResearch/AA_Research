@@ -47,3 +47,53 @@ Not optimize AA.
 Not redesign AA.
 
 Not increase trade count.
+
+## 2026-06-24 - Focus Shift From Evidence Recovery To Evidence Review
+
+Status: Organizational Guidance
+
+Observation:
+
+The bottleneck appears to have shifted from discovering and recovering evidence toward reviewing evidence already identified.
+
+Earlier focus:
+
+- Discover evidence
+- Recover evidence
+- Build visibility
+
+Current state:
+
+- Significant evidence inventory has been identified.
+
+Prioritization change:
+
+AG's highest-value activity may no longer be creating new extraction paths.
+
+AG's role is evolving toward:
+
+Data -> Observation -> GM Review
+
+Not:
+
+Data -> New Tool -> New Pipeline
+
+Operating question before proposing new recovery mechanisms:
+
+What existing evidence has not yet been analyzed?
+
+Current focus:
+
+- Review evidence
+- Generate observations
+- Avoid conclusions
+- Await GM review
+
+Governance status:
+
+- No change to governance
+- No change to strategy
+- No change to thresholds
+- No change to risk
+- No change to portfolio
+- No change to AA behavior
