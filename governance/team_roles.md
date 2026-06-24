@@ -23,6 +23,19 @@ During Data Collection & Learning:
 - No recommendations are generated unless explicitly requested by GM.
 - Repository contents take precedence over memory, assumptions, prior conversations, and agent recollection.
 
+Approved Organizational Workflow (2026-06-24):
+
+  Data → Observation → GM Review → Hypothesis → Contradiction Test → Finding
+
+Evidence Review is now a formal organizational function.
+
+The team receives two categories of evidence inputs:
+1. Live trade data: from AA's active trading records (aa_journal, challenger_trades, challenger_positions).
+2. Evidence Recovery ledgers: structured ledgers extracted from AA's existing decision records (opportunity_funnel.csv, cycle_vetoes.csv, opportunity_funnel_simulated.csv).
+
+Evidence Review means reviewing structured ledgers to generate Observations.
+Observations are submitted to GM Review before any hypothesis is formed.
+
 ## Team Members
 
 ### Ari Axelrod - Trader / AA Decision Desk
@@ -37,6 +50,7 @@ Inputs:
 - Trade history
 - AA decision journal
 - Entry, hold, exit, and rejection records
+- Evidence Recovery ledgers (opportunity_funnel.csv)
 
 Outputs:
 
@@ -64,6 +78,7 @@ Inputs:
 - Symbol-side performance
 - Session performance
 - Blocked vs admitted opportunity data
+- Evidence Recovery ledgers (opportunity_funnel_simulated.csv — blocked signal counterfactual outcomes)
 
 Outputs:
 
@@ -169,6 +184,7 @@ Inputs:
 - Drawdown state
 - Daily loss state
 - Open-position risk
+- Evidence Recovery ledgers (cycle_vetoes.csv — Downside Limit and Concentration freeze events)
 
 Outputs:
 

@@ -114,7 +114,7 @@ GM should not directly promote a claim into a finding without evidence and contr
 
 AG
 
-Role: Chief Research Analyst
+Role: Chief Research Analyst / Observation Pipeline Owner
 
 Responsibilities:
 
@@ -124,6 +124,9 @@ Responsibilities:
 * Produce source reviews
 * Produce research synthesis
 * Support or challenge active hypotheses with external evidence
+* Own and maintain the offline Evidence Recovery pipeline (read-only)
+* Produce structured Observations from recovered evidence
+* Submit Observations to GM Review before any hypothesis is formed
 
 Primary output:
 
@@ -131,23 +134,29 @@ Primary output:
 * Source reviews
 * Comparative analysis
 * External evidence packs
+* Structured Observations (Data → Observation → GM Review)
+* Evidence Recovery ledgers
 
-AG discovers and analyzes.
+AG discovers, analyzes, and observes.
 
 AG does not decide governance.
 
 AG does not modify AA trading behavior.
 
+AG does not promote Observations to Hypotheses or Findings without GM authorization.
+
 ⸻
 
 Codex
 
-Role: Chief Knowledge Officer / Repository Custodian
+Role: Chief Knowledge Officer / Repository Custodian / Organizational Memory Owner
 
 Responsibilities:
 
 * Maintain AA_Research
 * Preserve institutional memory
+* Own and maintain the Organizational Memory records (memory/)
+* Own and maintain the Governance Records (governance/)
 * Maintain ledgers
 * Maintain findings registry
 * Maintain hypothesis registry
@@ -156,6 +165,8 @@ Responsibilities:
 * Ensure repository integrity
 * Commit and publish durable knowledge
 * Track provenance of claims
+* Record all approved Organizational Observations
+* Record current organizational focus and workflow state
 
 Primary output:
 
@@ -164,6 +175,8 @@ Primary output:
 * Registry updates
 * Structured records
 * Documentation
+* Organizational memory updates (current_focus.md, organizational_observations.md)
+* Governance records
 
 Codex records, structures, reconciles, and preserves.
 
@@ -262,6 +275,24 @@ Policy Change:
 ⸻
 
 7. Core Workflows
+
+Observation Pipeline (Approved 2026-06-24)
+
+AG recovers and structures evidence from existing AA decision records.
+
+AG generates strict Observations only (no explanations, no hypotheses).
+
+AG submits Observations to GM Review.
+
+GM decides whether an Observation is promoted to a Hypothesis.
+
+Flow:
+
+Data → Observation → GM Review → [Hypothesis | Archived]
+
+This is a mandatory pre-hypothesis gate. Observations must not be promoted without explicit GM authorization.
+
+⸻
 
 Research Workflow
 

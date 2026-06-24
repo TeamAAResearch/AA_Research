@@ -16,6 +16,32 @@ Hypothesis is not finding.
 
 Finding requires surviving contradiction.
 
+Approved Organizational Workflow (2026-06-24):
+
+  Data → Observation → GM Review → Hypothesis → Contradiction Test → Finding
+
+The step "Data → Observation → GM Review" is a mandatory pre-hypothesis gate.
+
+Observations must not be promoted to Hypotheses without explicit GM authorization.
+
+## Evidence Review
+
+Evidence Review is a formal organizational function approved 2026-06-24.
+
+Evidence Review means reviewing structured Evidence Recovery ledgers to generate Observations.
+
+Evidence Review is not Evidence Recovery.
+
+Evidence Review does not produce findings.
+
+Evidence Review does not authorize strategy, threshold, risk, portfolio, or code changes.
+
+Primary ledgers under Evidence Review:
+
+- ledgers/opportunity_funnel.csv
+- ledgers/cycle_vetoes.csv
+- ledgers/opportunity_funnel_simulated.csv (Shadow Risk Engine output)
+
 ## Evidence Standard
 
 Every major conclusion must include:
