@@ -35,11 +35,28 @@ def run():
         stop_loss = float(row["stop_loss"])
         take_profit = float(row["take_profit"])
         
-        if entry_price <= 0 or stop_loss <= 0 or take_profit <= 0:
-            row["simulated_outcome"] = "No_Risk_Brackets"
+        if entry_price <= 0:
+            row["simulated_outcome"] = "No_Entry_Price"
             row["simulated_mfe"] = ""
             row["simulated_mae"] = ""
             continue
+            
+        if stop_loss <= 0 or take_profit <= 0:
+            # Shadow Risk Engine: Apply default Challenger config brackets
+            # stop_loss_pct = 0.005, take_profit_pct = 0.01
+            if row["side"] == "Buy":
+                stop_loss = round(entry_price * (1 - 0.005), 5)
+                take_profit = round(entry_price * (1 + 0.01), 5)
+            else:
+                stop_loss = round(entry_price * (1 + 0.005), 5)
+                take_profit = round(entry_price * (1 - 0.01), 5)
+            
+            # Save the synthesized brackets back to the row
+            row["stop_loss"] = stop_loss
+            row["take_profit"] = take_profit
+            # Mark decision so we know it used shadow brackets
+            if "Shadow" not in row["decision"]:
+                row["decision"] = row["decision"] + "_Shadow"
             
         # Query ticks
         symbol = row["symbol"]
