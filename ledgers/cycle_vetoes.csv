@@ -1,0 +1,108 @@
+timestamp,veto_agent,raw_blockers
+2026-06-22 01:43:11,Anomaly Scanner,Anomaly gate active: 6 critical anomaly group(s) require review before new entries.
+2026-06-22 15:10:02,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -136.74 minus open stop risk 999.75 <= -1000.
+2026-06-22 15:15:03,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -136.74 minus open stop risk 999.75 <= -1000.
+2026-06-22 16:40:32,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-22 16:45:33,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-22 16:50:34,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-22 17:05:39,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-22 17:10:40,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-22 17:15:42,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-22 20:11:35,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 20:16:36,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 20:21:37,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 20:26:39,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 20:31:40,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 20:36:42,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 20:41:43,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 20:46:44,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 20:51:46,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 20:56:47,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:01:49,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:06:50,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:11:52,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:16:54,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:21:55,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:26:57,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:31:59,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:37:00,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:42:01,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:47:03,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:52:04,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 21:57:06,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:02:07,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:07:09,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:12:10,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:17:11,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:22:13,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:27:14,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:32:15,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:37:17,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:42:19,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:47:20,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:52:22,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 22:57:23,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:02:24,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:07:26,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:12:27,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:17:29,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:22:30,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:27:32,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:32:34,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:37:35,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:42:37,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:47:38,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:52:39,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-22 23:57:41,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -101.94 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:02:42,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:07:43,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:12:46,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:17:47,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:22:48,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:27:50,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:32:51,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:37:53,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:42:56,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:47:57,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:52:59,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 00:58:00,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 01:03:02,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L 0.00 minus open stop risk 1087.15 <= -1000.
+2026-06-23 09:31:38,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 09:36:40,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:02:16,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:07:17,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:12:19,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:20:34,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:25:36,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:30:37,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:35:39,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:40:40,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:45:41,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:50:43,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 10:55:45,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:00:46,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:05:48,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:10:49,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:15:51,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:20:53,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:25:55,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:30:57,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:35:58,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:41:00,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:46:01,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 11:51:03,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 13:11:30,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -264.35 minus open stop risk 749.72 <= -1000.
+2026-06-23 13:16:32,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -264.35 minus open stop risk 749.72 <= -1000.
+2026-06-23 13:21:33,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -264.35 minus open stop risk 749.72 <= -1000.
+2026-06-23 13:26:35,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -264.35 minus open stop risk 749.72 <= -1000.
+2026-06-23 13:31:36,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -264.35 minus open stop risk 749.72 <= -1000.
+2026-06-23 13:36:38,Downside Limit,Concentrated short USD exposure across 3 positions.; Aggregate downside gate breached: realized daily P/L -264.35 minus open stop risk 749.72 <= -1000.
+2026-06-23 13:51:44,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 13:56:45,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 14:01:47,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 14:06:48,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 14:11:50,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 14:16:51,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 14:24:48,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 15:04:27,Concentrated short USD exposure across 3 positions.,Concentrated short USD exposure across 3 positions.
+2026-06-23 22:24:06,Downside Limit,Aggregate downside gate breached: realized daily P/L -583.01 minus open stop risk 499.89 <= -1000.
