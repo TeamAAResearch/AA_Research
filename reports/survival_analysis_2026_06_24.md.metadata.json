@@ -1,0 +1,5 @@
+{
+  "summary": "Trade survival analysis showing a near-perfect inverse correlation between trade duration and outcome. Trades under 1 hour: 100% win rate, +$244. Trades over 8 hours: 33% win rate, -$609.",
+  "updatedAt": "2026-06-24T01:50:13.068099Z",
+  "userFacing": true
+}

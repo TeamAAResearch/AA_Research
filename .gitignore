@@ -1,0 +1,39 @@
+# macOS / editor noise
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Local secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials*
+token*
+secrets*
+
+# Local runtime / generated data that should not become research truth
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+logs/
+outputs/
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+
+# Large local exports or raw broker downloads
+*.xlsx
+*.xls
+*.pdf
+*.zip
+
