@@ -133,6 +133,22 @@
 
 ---
 
+### [2026-06-25] Trailing Stop Architectural Assessment
+* **Artifact:** `reports/trailing_stop_architectural_assessment.md`
+* **Commit:** `fb67ef4`
+* **GM Decision:** Approved
+* **Confidence:** High
+* **Current Status:** Architectural Assessment
+* **Lifecycle:** Open
+* **Next Required Action:** AG review of the coupled exit-stack defect hypothesis and proposed contradiction tests.
+* **GM Notes:**
+  * Artifact exists in repository state.
+  * Required governance sources are present.
+  * No prohibited operational authorization language detected.
+  * Assessment does not authorize implementation or parameter changes.
+
+---
+
 ### [2026-06-25] Phase 7: Regime Shift Observation
 * **Artifact:** `reports/regime_shift_observation_phase7.md`
 * **Commit:** `4f5a493`
