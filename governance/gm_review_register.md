@@ -68,3 +68,18 @@
 * **Next Required Action:** GM review of contradiction findings (tail-risk concentration, XAGUSD mirage).
 * **GM Notes:**
   * Pending official GM review.
+
+---
+
+### [2026-06-25] Diagnostic Investigation v1: Tail-Risk Root Cause
+* **Artifact:** `reports/diagnostic_tail_risk_root_cause_v1.md`
+* **Commit:** `0a5460a`
+* **GM Decision:** Approved
+* **Confidence:** High
+* **Current Status:** Hypothesis Candidate
+* **Lifecycle:** Open
+* **Next Required Action:** Contradiction testing of the two approved hypotheses (Legacy Sizing and Duration Bleed).
+* **GM Notes:**
+  * Artifact exists in repository state.
+  * Required governance sources are present.
+  * No prohibited operational authorization language detected.
