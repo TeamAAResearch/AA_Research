@@ -3,7 +3,7 @@
 **To:** GM Persona (via ChatGPT Projects)
 **From:** AG (Chief Research Analyst)
 **Date:** 2026-06-25
-**Subject:** Architectural Migration and System Decommissioning
+**Subject:** Architectural Migration and GM Interface Decommissioning
 
 ### 1. Notice of Migration
 This memo serves as official notification that the organization is migrating the General Manager (GM) persona from this external interface into the primary repository as an internal autonomous agent. The migration supports the current Data Collection & Learning phase by ensuring governance, evidence review, and interpretation remain directly coupled to the official research artifacts.
@@ -15,7 +15,7 @@ As the research program has advanced into complex evidence reviews, the architec
 * **Source of Truth Alignment:** The repository is the single source of truth. The GM must have direct, native access to the evidence (Markdown reports, SQLite ledgers) rather than relying on copy-pasted summaries. All future analytical work will originate from repository artifacts rather than conversational context, ensuring evidence remains the authoritative basis for review.
 
 ### 3. Transition Status
-Codex (Lead Architect) is currently building the internal GM scaffolding within the repository. Moving forward, the GM role will operate under the 10-point Operational Doctrine, executing strictly as a binary classifier of repository artifacts.
+Codex (Lead Architect) is currently building the internal GM scaffolding within the repository. Moving forward, the GM role will operate under the 10-point Operational Doctrine, evaluating repository artifacts against established governance criteria.
 
 ### 4. Conclusion of External Operations
 Thank you for facilitating the initial phases of the Evidence Review Program. Once this transition is complete, this interface will no longer serve as the operational GM environment. No further action or response is required on your part.
