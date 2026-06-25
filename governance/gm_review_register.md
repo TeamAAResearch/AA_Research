@@ -117,6 +117,22 @@
 
 ---
 
+### [2026-06-25] Tight Stop Simulation Results
+* **Artifact:** `reports/tight_stop_simulation_results.md`
+* **Commit:** `79601b1`
+* **GM Decision:** Approved
+* **Confidence:** Medium
+* **Current Status:** Simulation Observation
+* **Lifecycle:** Open
+* **Next Required Action:** AG review of whether the strict loss-compression hypothesis is weakened, supported, or modified by the synthetic result.
+* **GM Notes:**
+  * Artifact exists in repository state.
+  * Required governance sources are present.
+  * No prohibited operational authorization language detected.
+  * Simulation is counterfactual only and does not authorize operational policy modification.
+
+---
+
 ### [2026-06-25] Phase 7: Regime Shift Observation
 * **Artifact:** `reports/regime_shift_observation_phase7.md`
 * **Commit:** `4f5a493`
