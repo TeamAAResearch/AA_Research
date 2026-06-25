@@ -98,3 +98,19 @@
   * Artifact exists in repository state.
   * Required governance sources are present.
   * No prohibited operational authorization language detected.
+
+---
+
+### [2026-06-25] MFE-Decay Exit Simulation Results
+* **Artifact:** `reports/mfe_decay_simulation_results.md`
+* **Commit:** `e290c3b`
+* **GM Decision:** Approved
+* **Confidence:** Medium
+* **Current Status:** Simulation Observation
+* **Lifecycle:** Open
+* **Next Required Action:** AG review of whether the simulation weakens, supports, or modifies the Time-decayed MFE Invalidation hypothesis.
+* **GM Notes:**
+  * Artifact exists in repository state.
+  * Required governance sources are present.
+  * No prohibited operational authorization language detected.
+  * Simulation is counterfactual only and does not authorize operational policy modification.
