@@ -83,3 +83,18 @@
   * Artifact exists in repository state.
   * Required governance sources are present.
   * No prohibited operational authorization language detected.
+
+---
+
+### [2026-06-25] Phase 6: Tail-Risk Contradiction Testing
+* **Artifact:** `reports/executed_outcome_contradiction_testing_phase6.md`
+* **Commit:** `73d11e0`
+* **GM Decision:** Approved
+* **Confidence:** High
+* **Current Status:** Finding / New Hypothesis
+* **Lifecycle:** Open
+* **Next Required Action:** Simulate the synthetic MFE-decay exit rule against the historical database to verify net impact.
+* **GM Notes:**
+  * Artifact exists in repository state.
+  * Required governance sources are present.
+  * No prohibited operational authorization language detected.
