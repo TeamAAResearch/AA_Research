@@ -30,3 +30,18 @@ If a material issue is identified, execution is paused. The Investigator must re
 3. A recommended refinement.
 4. Expected impact.
 5. Await GM confirmation.
+
+## Evidence Freshness Check (Refinement 1)
+Every major investigation must begin with an explicit verification that the correct, up-to-date evidence base is being analyzed.
+
+### Minimum Freshness Checks
+* What is the newest timestamp in the source database?
+* What is the newest timestamp represented in the derived ledgers?
+* Were the ledgers regenerated after the latest trading session?
+* What is the analysis cutoff timestamp?
+* Has new evidence been generated since the previous report?
+* If yes, would that materially affect previous conclusions?
+
+### Execution Protocol
+* **If evidence is current:** Proceed normally.
+* **If evidence is stale:** Pause. Do NOT execute the investigation. Recommend refreshing the evidence (regenerating ledgers or expanding queries) before continuing to ensure the organization is analyzing the correct evidence.
