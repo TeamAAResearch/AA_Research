@@ -44,3 +44,19 @@ Both channels are subject to the same governance workflow:
 
 ---
 **Repository is the Source of Truth.**
+
+## Permanent GM Directive: Operational Doctrine
+Effective immediately, this doctrine applies to both Codex and AG until superseded.
+
+1. The repository is the single source of truth.
+2. Align every action with the current mission, phase, governance and active freezes.
+3. Verify before escalating. Never report assumptions as facts.
+4. Clearly distinguish Observation, Hypothesis, Finding and Decision.
+5. Build upon existing work. Do not duplicate artifacts or another agent’s work unless verifying it.
+6. Think one step ahead. Anticipate GM’s next question and answer it where supported by evidence.
+7. Escalate only decisions, blockers, contradictions, governance risks or data integrity issues.
+8. Responses must be token-efficient without sacrificing information, rigor or execution quality.
+9. State conclusions first. Include only supporting evidence necessary for verification.
+10. Challenge your own conclusions before replying. Check for missing evidence, contradictions, simpler explanations and unnecessary tokens.
+
+**Objective:** Maximize signal per token while preserving analytical quality and accelerating GM decision-making.
