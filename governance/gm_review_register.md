@@ -176,3 +176,16 @@
   * Artifact exists in repository state.
   * Required governance sources are present.
   * No prohibited operational authorization language detected.
+
+---
+
+### [2026-06-26] Official Project Mandate Update
+* **Artifact:** `reports/mandate_update_directive_for_codex.md`
+* **GM Decision:** Approved / Mandated
+* **Confidence:** Absolute
+* **Current Status:** Operational Shift
+* **Lifecycle:** Closed
+* **Next Required Action:** Codex to acknowledge the new identity framing.
+* **GM Notes:**
+  * Mandate explicitly shifted from "pure FX" to "non constrain metals and fx 24/7 trading expert".
+  * Objective officially updated: "build an autonomous fx/metals trading system".
