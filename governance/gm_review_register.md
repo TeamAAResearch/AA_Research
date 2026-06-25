@@ -129,3 +129,18 @@
   * Artifact exists in repository state.
   * Required governance sources are present.
   * No prohibited operational authorization language detected.
+
+---
+
+### [2026-06-25] Phase 7: Negative Skew Contradiction Testing
+* **Artifact:** `reports/executed_outcome_contradiction_testing_phase7.md`
+* **Commit:** `52f1e97`
+* **GM Decision:** Approved
+* **Confidence:** High
+* **Current Status:** Finding / New Hypothesis
+* **Lifecycle:** Open
+* **Next Required Action:** Codex to simulate a strict -$20 maximum stop-loss override on the execution engine to prove profitability.
+* **GM Notes:**
+  * Artifact exists in repository state.
+  * Required governance sources are present.
+  * No prohibited operational authorization language detected.
