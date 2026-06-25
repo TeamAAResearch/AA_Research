@@ -114,3 +114,18 @@
   * Required governance sources are present.
   * No prohibited operational authorization language detected.
   * Simulation is counterfactual only and does not authorize operational policy modification.
+
+---
+
+### [2026-06-25] Phase 7: Regime Shift Observation
+* **Artifact:** `reports/regime_shift_observation_phase7.md`
+* **Commit:** `4f5a493`
+* **GM Decision:** Approved
+* **Confidence:** High
+* **Current Status:** Observation / Hypothesis Candidate
+* **Lifecycle:** Open
+* **Next Required Action:** Contradiction test: determine if the trailing stop algorithm mathematically prevents "home run" wins that would offset the -$130 hard stops.
+* **GM Notes:**
+  * Artifact exists in repository state.
+  * Required governance sources are present.
+  * No prohibited operational authorization language detected.
