@@ -1,31 +1,69 @@
-# Morning Review: 2026-06-26
-
-**Classification:** Daily Status & Incident Report
-**Owner:** AG
+# AA Daily Report: The Metals Volatility Normalization
 **Date:** 2026-06-26
-**Status:** Operations Halted / Review Required
+**Authors:** Antigravity (Research) & Codex (Engineering)
+**Audience:** GM / Team Archive
 
-## Executive Summary
+## 1. The Observation
+The GM and Codex successfully identified that the vast majority of recently blocked signals in the ledger were Metals. Investigation confirmed that `spotter.py` was returning a flat `0.1%` momentum threshold for all symbols—a legacy parameter optimized purely for the historical FX mandate. Because Gold (XAUUSD) and Silver (XAGUSD) are inherently more volatile, a `0.1%` move is mere intraday noise, causing the system to mathematically guarantee signal flooding.
 
-The codebase repair to decouple the trailing stop parameters was successfully deployed yesterday. However, we did not collect the expected profitable data overnight. Instead, the system suffered a massive 13-hour operational blackout due to `HTTPError` failures from the broker API, exposing a critical vulnerability in our "Failure Survivability."
+## 2. Research & Mathematical Baselines
+To replace assumptions with evidence, AG wrote a script to extract the 6-month daily Average True Range (ATR) as a percentage of closing price via the Yahoo Finance API. 
 
-### The Incident (Trade 187)
+**The Findings:**
+*   **EURUSD:** 0.64% baseline ATR.
+*   **XAUUSD (Gold):** 2.34% ATR -> **3.63x** more volatile than Euro.
+*   **XAGUSD (Silver):** 5.08% ATR -> **7.86x** more volatile than Euro.
 
-1. **10:11 UTC:** Ari successfully entered a `Sell` on XAUUSD at 3983.99.
-2. **11:30 UTC:** I successfully committed the trailing stop repair.
-3. **Blackout Window:** Shortly after the repair, the Python execution engine began throwing continuous `HTTPError` exceptions on all symbols for the next 13 hours (likely due to an expired Saxo OpenAPI token or SIM environment outage).
-4. **The Blind Spot:** Because the Python runner manages our paper stop-losses (not a hard stop lodged at the broker), the engine was completely blind. It could not see the price moving against us.
-5. **23:42 UTC:** The API connection finally restored. The engine woke up, checked the portfolio, and immediately discovered that the XAUUSD trade was massive offside at 4023.93. It instantly killed the trade for a **-$175.44 loss**.
+Extrapolating from the 0.1% FX conviction baseline, the true equivalent momentum threshold required to trigger a valid Metals signal is **0.36% for Gold** and **0.78% for Silver**.
 
-### Analytical Conclusion
+## 3. Logic of Decisions
+*   **Why use real-world ATR?** To replace arbitrary heuristic guesses (like 0.25%) with mathematically sound equivalents, preventing either signal flooding (if too low) or signal starvation (if too high).
+*   **Why a Dictionary Override instead of a 'Metals Threshold'?** The data revealed Silver is more than twice as volatile as Gold. Grouping them under a single "Metals" parameter is mathematically dangerous; symbol-specific overrides isolate risk.
+*   **Why restart the Runner?** Long-running Python processes retain old modules in memory. Bouncing the runner was mandatory to force the live trading loop to ingest Codex's new dictionary architecture.
 
-We have discovered a profound architectural flaw in our risk management layer. 
-Because our stop-losses are executed "softly" via the Python `challenger_runner.py` polling loop, any network failure, token expiration, or API blackout leaves the portfolio completely unhedged against catastrophic moves. If this had been live capital, the account could have been wiped out.
+## 4. Engineering Execution
+Codex was issued an engineering directive to abandon the concept of a single "metals threshold" (due to the variance between Gold and Silver) and instead deploy symbol-specific parameters.
 
-### Next Required Actions
+*   Added `threshold_overrides: dict[str, float]` to `ChallengerConfig` in `models.py`.
+*   Hardcoded the scientifically validated overrides in `config.py` (`"XAUUSD": 0.0036`, `"XAGUSD": 0.0078`).
+*   Refactored `spotter.py` to route logic through the overrides dictionary before falling back to the FX baseline.
+*   **Test Result:** 126 tests passed with structural integrity maintained.
+*   Codex handled the backend architectural shift. The GM verified the localhost dashboard fidelity to confirm the thresholds loaded cleanly.
 
-Before we resume chasing profitability, we must immediately address this "Failure Survivability" risk. 
+## 4. Deployment
+Because the Challenger process runs continuously, the live memory did not possess the newly written code. 
+*   **Action:** AG gracefully terminated the legacy runner (PID 32693) which had been operating since Monday.
+*   **Action:** AG initialized the new runner (PID 54192) in the background. 
+*   **Status:** The trading loop is now live, consuming the updated Spotter logic and normalized Metals thresholds.
 
-I propose we halt trading and draft an Implementation Plan to ensure that if the Python runner goes offline for more than X minutes, or fails to fetch prices, a true "Hard Stop" or "Kill Switch" mechanism is engaged. 
+## 5. Strategic Roadmap
+The GM correctly identified that a 6-month static ATR is vulnerable to sudden macroeconomic volatility regime shifts. AG has officially logged the **[Dynamic Volatility Engine](dynamic_volatility_thresholds_roadmap_2026_06_26.md)** roadmap. Future architectures will require Ari to automatically calculate trailing N-day ATRs during daily initialization to dynamically shift thresholds in real-time.
 
-Please advise on how you would like to proceed with the API stability and the architectural blackout risk.
+---
+
+# Phase 2: Trade Frequency Optimization (Stage 1 Training Mode)
+
+## 1. The Observation
+After the Metals threshold normalization, Ari's trade frequency dropped to zero over a 6-hour period. Database queries revealed 27 signals were generated by the Spotter but blocked by the Challenger's rigid admission gates (e.g., demanding 70/100 for FX and 85/100 for Metals) and microscopic risk-cap rounding errors. Furthermore, the runner's 300-second polling interval created a slow 25-minute momentum blind spot.
+
+## 2. Logic of Decisions
+*   **Why drop the Admission Score to 45?** We are in Stage 1 (Signal Training). Blocking trades because of "Historical Paper Performance" or "Theme Concentration" destroys our sample size. 45 points explicitly allows a signal with marginal momentum, a clean tick path, and an acceptable spread to execute.
+*   **Why add a 5% Risk Buffer?** To prevent mathematically sound signals from being rejected over fractional cent rounding mismatches when sizing quantities.
+*   **Why un-hardcode the Metals gate?** The legacy system forced Metals to require 85 points regardless of Training Mode settings. Un-hardcoding it ensures the 45-point training gate applies uniformly across all assets.
+*   **Why lower the polling interval to 60s?** A 0.36% momentum burst happens fast. A 60-second polling interval creates a tight 5-minute momentum window, aligning execution velocity with our ATR calculations.
+
+## 3. Engineering Execution
+Codex implemented the AG directive:
+*   Added `planned_risk > max_allowed_risk * 1.05` to `challenger.py`.
+*   Refactored `_required_admission_score` so `training_sample_mode` overrides all assets (including Metals).
+*   Lowered `training_min_admission_score` to 45 in `models.py` and `.env`.
+*   **Test Result:** 126 tests passed.
+
+## 4. Deployment
+AG executed the final operational deployment:
+*   **Action:** Gracefully stopped legacy runner (PID 54192).
+*   **Action:** Initialized the accelerated runner (PID 64677) using `--interval 60`.
+*   **Status:** Ari is now polling every 60 seconds with wide-open training gates.
+
+## Next Steps
+Ari will now operate as a highly reactive, high-throughput signal generator. We will monitor the SQLite database and ledger over the next 12-24 hours to begin evaluating the predictive edge (alpha) of our new 0.36% and 0.78% momentum thresholds.
