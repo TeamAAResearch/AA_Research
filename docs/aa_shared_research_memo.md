@@ -26,6 +26,30 @@ Allowed intervention only for operational failure, database integrity failure, o
 
 ## Official Baseline
 
+Current quantitative baseline:
+
+**Phase 25 Projected: 0.3 ATR Stop + 1.0x Pyramid Optimization**
+
+Date achieved: 2026-06-28
+
+- Net P/L: $4,605.38 SGD
+- Previous baseline: $2,911.07 SGD
+- Win rate: 61.9%
+- Average winning trade: $192.14
+- Average losing trade: -$24.40
+- Expectancy per trade: $109.65
+- Previous expectancy: $69.31
+- Sample size: 42 high-conviction trades across 11 instruments
+
+Canonical proof:
+
+- Report: `AA_Research/reports/phase25_projected_baseline_2026_06_28.md`
+- Script: `AA_Research/scripts/simulate_phase25_mae_optimization.py`
+
+Interpretation:
+
+This is a projected replay baseline for Ari's optimized brain, not live realized P/L. Future live paper-trading results should be compared against this benchmark.
+
 Official production research baseline:
 
 2026-06-22 07:02:25 UTC
