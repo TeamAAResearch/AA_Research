@@ -36,16 +36,18 @@ Do not do this manually. Build an automated ingestion script:
 
 ---
 
-## Part 3: The Continuous Feedback Loop Architecture
-To make this an ongoing, autonomous process, implement the following structure:
+## Part 3: The Continuous Feedback Loop Architecture (Read-Only)
+To make this an ongoing research process, implement the following structure:
 
 1. **The Drop Zone:** 
    Create a dedicated directory at `AA_Research/ledgers/human_benchmark/`. The GM will drop new Saxo exports into this folder periodically.
    
 2. **The Calibration Pipeline:**
-   When the ingestion script runs, it should not just generate a report. It must programmatically write the human benchmark (specifically the Target Payoff Ratio) into a new section in `AA_SHARED_RESEARCH_MEMO.md` called `## Active Human Benchmarks`.
+   When the ingestion script runs, it must programmatically write the human benchmark (specifically the Target Payoff Ratio and Directional Bias) into a new section in `AA_SHARED_RESEARCH_MEMO.md` called `## Active Human Benchmarks`.
    
-3. **Ari's Intake:**
-   Ari's execution code (e.g., `aa_decision.py` or `trade_manager.py`) should be modified by Codex to read these benchmarks. If the human is routinely achieving a 1.67 payoff ratio with average wins of $130, Ari's code should automatically widen its trailing stops to attempt to capture similar magnitude moves, rather than reverting to its default, anxious $14 capture rate.
+3. **Research-Only Consumption (No Auto-Tuning):**
+   *Codex Feedback Incorporated:* Do **NOT** wire these benchmarks directly into Ari's execution code (e.g., `aa_decision.py` or `trade_manager.py`) to automatically widen trailing stops. The human edge relies on discretion and context that a simple wider stop cannot replicate. 
+   
+   Instead, this pipeline must remain **read-only/report-only**. AG, Nolan, Rowan, and Ari will use the data in the Research Memo to compare human XAUUSD behavior against Ari's, debate the findings, and propose deliberate, mathematically tested parameter updates before any execution code is touched.
 
-**Codex:** Please begin engineering this ingestion script and feedback loop structure immediately. Report back to the GM when the pipeline is ready to consume the next batch of human logs.
+**Codex:** Please begin engineering this read-only ingestion script and drop-zone structure immediately. Report back to the GM when the pipeline is ready to consume the next batch of human logs.
